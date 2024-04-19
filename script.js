@@ -13,22 +13,12 @@ var createbutton=(textcontent,idname,classname)=>{
 }
   
 var number=(numbers)=>{
-    // event.preventDefault();
     return ()=>{
+        console.log("success");
         document.getElementById("displaybox").value+=numbers; 
     }
 
 };
-// var operator=(numbers)=>{
-//     return ()=>{
-//         var temp=document.getElementById("displaybox").value;
-//         document.getElementById("displaybox").value+=numbers; 
-//         console.log(temp);
-//         clearfunction();
-//         calculate(temp);
-//     }
-
-// }
 var equalfunction=(numbers)=>{
     return ()=>{
         var temp= document.getElementById("displaybox").value=eval(document.getElementById("displaybox").value);
